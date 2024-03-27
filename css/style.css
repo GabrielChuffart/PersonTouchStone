@@ -3,14 +3,17 @@
     --vert-principal: rgb(75, 219, 106);
 }
 
- body {
+body {
     font-family: Arial, sans-serif;
+    background-color: rgb(224, 224, 224);
     margin: 0;
     padding: 0;
 }
 header {
     padding: 10px 0;
+    background-color: white;
     text-align: center;
+    box-shadow: 0px 2px 3px 0px #706666;
 }
 nav {
     display: flex; 
@@ -35,4 +38,37 @@ nav ul li a {
 }
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+main {
+    margin-top: 5%
+}
+
+#game-selector {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.game-tile {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.game-tile:hover{
+    transition: 350ms;
+    box-shadow: -4px 4px 10px 1px #706666;
+    transform: scale(1.2);
+}
+
+.game-tile p{
+    text-align: center;
 }
