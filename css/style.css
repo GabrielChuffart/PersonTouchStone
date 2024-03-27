@@ -1,0 +1,38 @@
+ /* Styles CSS optionnels peuvent être ajoutés ici */
+ :root{
+    --vert-principal: rgb(75, 219, 106);
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px ;
+}
+nav ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
