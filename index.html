@@ -12,21 +12,37 @@
         <nav>
             <p>PersonTouchStone</p>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Aim Trainer</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="aim.html">Aim Trainer</a></li>
                 <li><a href="#">Verbal Memory</a></li>
-                <li><a href="#">Sequence Memory</a></li>
+                <li><a href="sequence.html">Sequence Memory</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div id="game-selector">
-            <a class="game-tile" id="aim-trainer"><p>Aim Trainer</p><p>gros</p></a>
-            <a class="game-tile" id="verbal-memory"><p>Verbal Memory</p></a>
-            <a class="game-tile" id="sequence-memory"><p>Sequence Memory</p></a>
+            <a class="game-tile" id="aim-trainer">
+                <img src="img/aim-trainer.png" alt="image1" class="game-image">
+                <p><strong>Aim Trainer</strong></p>
+                <p>Soyez le plus rapide à cliquer sur les ronds verts !</p>
+            </a>
+        
+            <a class="game-tile" id="verbal-memory">
+                <img src="img/verbal-memory.png" alt="image2" class="game-image">
+                <p><strong>Verbal Memory</strong></p>
+                <p>Souvenez vous des mots déjà vu afin de garder vos vies</p>
+            </a>
+        
+            <a class="game-tile" id="sequence-memory">
+                <img src="img/sequence-memory.png" alt="image3" class="game-image">
+                <p><strong>Sequence Memory</strong></p>
+                <p>Souvenez vous de la séquence de carreau qui s'allume</p>
+            </a>
         </div>
     </main>
 
+    <script type="text/javascript" src="image.js"></script>
 </body>
+
 </html>
