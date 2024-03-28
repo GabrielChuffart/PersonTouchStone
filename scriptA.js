@@ -1,6 +1,6 @@
 let startTime;
 let endTime;
-let standby=3000;
+let standby=2500;
 let totalRec=0;
 let cpt=0;
 let timer=60;
