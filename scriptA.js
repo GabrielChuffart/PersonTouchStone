@@ -32,7 +32,7 @@ function resetTarget() {
         const maxHeight = window.innerHeight - target.offsetHeight;
 
         target.style.left = Math.random() * maxWidth + 'px';
-        target.style.top = Math.random() * maxHeight + 'px';
+        target.style.top = Math.random() * (maxHeight) + 75+'px';
 
         startTime = new Date();
     }
