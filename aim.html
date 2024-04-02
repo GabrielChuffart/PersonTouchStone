@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aim Test</title>
-    <link rel="stylesheet" href="css/styleA.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleAim.css">
 </head>
 <body>
-    <div id="target" onclick="recordClick()"></div>
-    <div id="result">Press 'Start' to begin!</div>
+    <header>
+        <nav>
+            <p style="color: black">PersonTouchStone</p>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="aim.html">Aim Trainer</a></li>
+                <li><a href="#">Verbal Memory</a></li>
+                <li><a href="sequence.html">Sequence Memory</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="aim-container">
+        <div id="target" onclick="recordClick()"></div>
+        <div id="result">Press 'Start' to begin!</div>
+        <div id="time"></div>
+    </div>
+    
     <button id="startButton" onclick="startGame()">Start</button>
-    <script src="scriptA.js"></script>
+    <script src="scriptAim.js"></script>
 </body>
 </html>
 
