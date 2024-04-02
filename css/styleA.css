@@ -12,7 +12,7 @@ body {
 #target {
     width: 80px;
     height: 80px;
-    background-color: #61dafb;
+    background-color:greenyellow;
     border: none;
     border-radius: 50%;
     display: flex;
@@ -24,7 +24,7 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 #target:hover {
-    background-color: #4FAFEA;
+    background-color:green;
     transform: scale(1.1);
 }
 
@@ -42,14 +42,14 @@ button {
     margin-top: 20px;
     border: none;
     border-radius: 5px;
-    background-color: #61dafb;
+    background-color:green;
     color: #282c34;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #4FAFEA;
+    background-color: greenyellow;
 }
 
 #result {
