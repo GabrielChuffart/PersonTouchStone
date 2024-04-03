@@ -7,8 +7,8 @@ gameTiles.forEach(tile => {
         if (src === 'img/aim-trainer.png') {
             image.setAttribute('src', 'img/aim-trainer-hover.png');
         }
-        else if (src === 'img/verbal-memory.png') {
-            image.setAttribute('src', 'img/verbal-memory-hover.png');
+        else if (src === 'img/jitter.png') {
+            image.setAttribute('src', 'img/jitter-hover.png');
         }
         else if (src === 'img/sequence-memory.png') {
             image.setAttribute('src', 'img/sequence-memory-hover.png');
@@ -20,8 +20,8 @@ gameTiles.forEach(tile => {
         if (src === 'img/aim-trainer-hover.png') {
             image.setAttribute('src', 'img/aim-trainer.png');
         }
-        else if (src === 'img/verbal-memory-hover.png') {
-            image.setAttribute('src', 'img/verbal-memory.png');
+        else if (src === 'img/jitter-hover.png') {
+            image.setAttribute('src', 'img/jitter.png');
         }
         else if (src === 'img/sequence-memory-hover.png') {
             image.setAttribute('src', 'img/sequence-memory.png');

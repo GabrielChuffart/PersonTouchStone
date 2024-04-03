@@ -1,0 +1,46 @@
+:root{
+  --vert-principal: rgb(75, 219, 106);
+}
+*{
+  user-select: none;
+}
+body {
+  margin: 0;
+  background-color: rgb(224, 224, 224);
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#clickBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.1s ease;
+  box-shadow: rgb(196 196 196) 0px 0px 6px 3px;
+}
+
+#clickBox:active {
+  transform: scale(1.05); /* Grossissement au clic */
+}
+
+p{
+  user-select: none;
+}
+
+#information{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
