@@ -1,3 +1,6 @@
+:root{
+    --vert-principal: rgb(75, 219, 106);
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -16,7 +19,7 @@ body {
 #target {
     width: 80px;
     height: 80px;
-    background-color:greenyellow;
+    background-color:var(--vert-principal);
     border: none;
     border-radius: 50%;
     display: flex;
@@ -54,7 +57,7 @@ button {
 }
 
 button:hover {
-    background-color: greenyellow;
+    background-color: var(--vert-principal);
 }
 
 #result {

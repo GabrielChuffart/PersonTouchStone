@@ -2,6 +2,7 @@ let startTime;
 let endTime;
 let gameTimer; 
 let clickTimeout; 
+let tabAverage = [];
 let timeLeft; // Initialize without setting a value here
 const initialTime = 30; // Initial countdown duration in seconds
 
@@ -40,11 +41,10 @@ function resetTarget() {
 
 function recordClick() {
     if(timeLeft <= 0) return;
-
     endTime = new Date();
     const reactionTime = endTime - startTime;
-    document.getElementById('result').innerText = `Your reaction time is ${reactionTime} milliseconds. Time left: ${timeLeft}s`;
-
+    document.getElementById('result').innerText = `Time left: ${timeLeft}s`;
+    tabAverage.push(reactionTime);
     clearTimeout(clickTimeout);
     clickTimeout = setTimeout(resetTarget, 200);
 }
@@ -64,6 +64,12 @@ function startGameTimer() {
 function endGame() {
     clearInterval(gameTimer);
     clearTimeout(clickTimeout);
-    document.getElementById('result').innerText = 'Game over! Click "Start" to play again.';
+    let timeAverage = 0;
+    for(let i = 0; i <tabAverage.length; i++) {
+        timeAverage += tabAverage[i];
+    }
+    timeAverage = timeAverage/tabAverage.length;
+    timeAverage = Math.round(timeAverage); 
+    document.getElementById('result').innerText = 'Game over! Your have a reaction time of ' + timeAverage + ' milliseconds. Click "Start" to play again.';
     document.getElementById('target').style.display = 'none';
 }
